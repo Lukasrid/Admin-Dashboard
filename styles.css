@@ -1,3 +1,66 @@
-h1 {
-    color: red;
+:root {
+    --dash-text-color: whitesmoke;
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidebar {
+    background-color: rgb(96, 133, 255);
+    width: 15vw;
+    min-width: 300px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 70px repeat(15, 50px);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.dash-logo>svg {
+    height: 60px;
+    width: auto;
+    padding: 20px;
+    padding-left: 10px;
+    color: var(--dash-text-color);
+    fill: var(--dash-text-color);
+}
+
+.dash-text>h1>a {
+    color: var(--dash-text-color);
+    text-decoration: none;
+}
+
+.logo-text-container>svg {
+    height: 20px;
+    width: auto;
+    padding: 20px;
+    fill: var(--dash-text-color);
+}
+
+.logo-text-container>svg>* {
+    fill: var(--dash-text-color);
+}
+
+.logo-text-container>h2>a {
+    color: var(--dash-text-color);
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 700px) {
+    .sidebar {
+        width: 100vw;
+        height: fit-content;
+    }
 }
